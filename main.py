@@ -11,8 +11,7 @@ app = FastAPI()
 # Enable CORS so your Spring Boot or React app can call this live
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Allows your local file to talk to the server
-    allow_credentials=True,
+    allow_origins=["*"], 
     allow_methods=["*"],
     allow_headers=["*"],
 )
